@@ -15,10 +15,31 @@ h1.header-item {
 }
 
 h2.header-item {
-    background-image: url('https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/.jpg');
-}
+    background-image: url('https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/Dirtbike2.jpg');
+        grid-area: header;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: rgb(255, 255, 255);
+        text-shadow: -1px 5px 0 #000, 10px -1px 0 #000, -1px 1px 0 #000, 3px 1px 0 #000;
+        text-align: center;
+        font-size: 47px;
+        margin: 0;
+    }
 
-h3.header-item,
+
+h3.header-item {
+    background-image: url('https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/Gokart_2 (1).jpeg');
+    grid-area: header;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 5px 0 #000, 10px -1px 0 #000, -1px 1px 0 #000, 3px 1px 0 #000;
+    text-align: center;
+    font-size: 47px;
+    margin: 0;
+}
 h4.header-item {
     background-image: url('https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_boxes.jpg');
     grid-area: header;
