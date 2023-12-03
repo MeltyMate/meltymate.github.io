@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+  
 
     <title>My world</title>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <h1>Welcome to My World</h1>
 
-  <p>Hello visitor.
+  <h1>Welcome to My World</h1>
+  <p>
     <div class="flex-container">
       <a href="mainpage.html" class="item">Main page</a>
       <a href="go-karting.html" class="item">Go-karting</a>
@@ -19,69 +18,59 @@
       <a href="simracing.html" class="item">Sim racing</a>
       <a href="contact.html" class="item">Contact</a>  
 
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var currentPage = document.body.id;
+          var currentLink = document.querySelector(`.flex-container a[href='${currentPage}.html']`);
+          if (currentLink) {
+            currentLink.classList.add("active");
+          }
+        });
+        
+      </script>
       
+<!-- In mainpage.html -->
+<body id="mainpage">
+
+  <!-- In go-karting.html -->
+  <body id="go-karting">
+  
+  <!-- In motorbiking.html -->
+  <body id="motorbiking">
+  
+  <!-- In simracing.html -->
+  <body id="simracing">
+  
+  <!-- In contact.html -->
+  <body id="contact">
   </div>
+  
 
-  </p>
+<h2>Hello visitor!</h2>
 
-
-
-
-  <style>
-    .item1 { grid-area: header; }
-    .item2 { grid-area: menu; }
-    .item3 { grid-area: main; }
-    .item4 { grid-area: right; }
-    .item5 { grid-area: footer; }
-    .grid-container {
-      display: grid;
-      grid-template-areas:
-        'header header header header header header'
-        'menu main main main right right'
-        'menu footer footer footer footer footer';
-      gap: 10px;
-      background-color: #98eb00;
-      padding: 10px;
-    }
-    .grid-container > div {
-      background-color: rgba(255, 128, 9, 0.8);
-      text-align: center;
-      padding: 20px 0;
-      font-size: 30px;
-    }
-
-  </style>
 
 
 
 <body>
-  <h1>Welcome to my world</h1>
-  <p>I am not sure what  I am doing here.</p>
-  <div class="grid-container">
-    <div class="item1">Header</div>
 
-    <div class="item2">Menu</div>
-    <div class="item3">Main</div>  
-    <div class="item4">Right</div>
-    <div class="item5">Footer</div>
+  <br>I am starting to do this website as a school project to tell about my hobbies. 
+  Later I will try to introduce these hobbies to those who would be interested in starting them. 
+  In the future I will try to introduce these hobbies, how to start them, what do you need for them etc.
+  <br>
+ 
+  <br>
+  This website is far from perfect but I am trying. Please, feel free to look around and not to contact me ever. 
+  
 
-    <p>
-      <img src="../meltymate.github.io/Images/Straight outta HH.png" title="" alt="Own logo of HH" height="250" width="250"/>
-      <img src="../meltymate.github.io/Images/Straight outta HH.png" title="" alt="Own logo of HH" height="250" width="250"/>
-      <img src="../meltymate.github.io/Images/Straight outta HH.png" title="" alt="Own logo of HH" height="250" width="250"/>
-      <img src="../meltymate.github.io/Images/Straight outta HH.png" title="" alt="Own logo of HH" height="250" width="250"/>
-      
+<img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_wall.jpg" title="" alt="RC_wall" height="500" width="900"/>
 
-    </p>
-  </div>
-
-
+ 
 
 </body>
 
 
 <footer>
-  <p>&copy;  2023 WelcometoMyWorld by Máté M. All rights reserved.</p>
+  <p>&copy;  2023 Welcome to My World by Máté M. All rights reserved.</p>
 </footer>
 </html>
 
