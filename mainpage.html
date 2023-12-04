@@ -2,59 +2,43 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My world</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My world</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="website.js" defer></script>
 </head>
 
 <body id="mainpage">
+    <div class="content">
+        <h1 class="header-item">Welcome to My World</h1>
 
-  <h1 class="header-item">Welcome to My World</h1>
+        <div class="flex-container">
+            <a href="mainpage.html" class="item">Main page</a>
+            <a href="go-karting.html" class="item">Go-karting</a>
+            <a href="motorbiking.html" class="item">Motorbiking</a>
+            <a href="simracing.html" class="item">Sim racing</a>
+            <a href="contact.html" class="item">Contact</a>
+        </div>
 
-  <!-- Navigation Links -->
-  <div class="flex-container">
-    <a href="mainpage.html" class="item">Main page</a>
-    <a href="go-karting.html" class="item">Go-karting</a>
-    <a href="motorbiking.html" class="item">Motorbiking</a>
-    <a href="simracing.html" class="item">Sim racing</a>
-    <a href="contact.html" class="item">Contact</a>
-  </div>
+        <h2>Hello visitor!</h2>
 
-  <!-- Other Content -->
+        <p>
+            I started to do this website as a school project to tell about my hobbies.
+            Later, I will try to introduce these hobbies to those who would be interested in starting them.
+            In the future, I will try to introduce these hobbies, how to start them, what you need for them, etc.
+        </p>
 
-  <!-- h2 Element -->
-  <h2>Hello visitor!</h2>
+        <div class="gallery-container">
+            <h2 class="gallery-item Motorbike" onclick="openGallery('header')">Motorbike Gallery</h2>
+            <h3 class="gallery-item Kart" onclick="openGallery('goKart')">Go-kart Gallery</h3>
+            <h4 class="gallery-item RC" onclick="openGallery('rc')">RC Gallery</h4>
+        </div>
+    </div>
 
-  <!-- Paragraphs -->
-  <p>
-    I stared to do this website as a school project to tell about my hobbies.
-    Later, I will try to introduce these hobbies to those who would be interested in starting them.
-    In the future, I will try to introduce these hobbies, how to start them, what you need for them, etc.
-  </p>
-
-  <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_wall.jpg"
-    title="RC_wall" alt="RC_wall" height="500" width="900" />
-
-  
-  <h2 class="header-item">Motorbike Gallery</h3>
-  <h3 class="header-item">Go-kart Gallery</h3>
-  <h4 class="header-item">RC Gallery</h4>
-
-  <footer>
-    <p>&copy; 2023 Welcome to My World by Máté M. All rights reserved.</p>
-  </footer>
-
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var currentPage = document.body.id;
-      var currentLink = document.querySelector(`.flex-container a[href='${currentPage}.html']`);
-      if (currentLink) {
-        currentLink.classList.add("active");
-      }
-    });
-  </script>
+    <footer>
+        <p>&copy; 2023 Welcome to My World by Máté M. All rights reserved.</p>
+    </footer>
 
 </body>
 
