@@ -35,8 +35,7 @@ h1.header-item {
     background-image: url('https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_wall.jpg');
 }
 
-/* Combine Motorbike, Kart, and RC styles to reduce redundancy */
-.Motorbike, .Kart, .RC {
+.Motorbike, .Kart, .RC, .Sim {
     grid-area: header;
     background-size: cover;
     background-position: center;
@@ -50,7 +49,7 @@ h1.header-item {
     transition: transform 0.3s;
 }
 
-.Motorbike:hover, .Kart:hover, .RC:hover {
+.Motorbike:hover, .Kart:hover, .RC:hover, .Sim:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
@@ -66,6 +65,9 @@ h1.header-item {
 .RC {
     background-image: url('https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_boxes.jpg');
 }
+.Sim {
+    background-image: url('https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/Sim2.jpeg');
+}
 
 .flex-container a.item {
     background-color: #504e4e;
@@ -73,7 +75,7 @@ h1.header-item {
     text-decoration: none;
     padding: 10px;
     margin: 5px;
-    border: 4px solid #f07109;
+    border: 2px solid #f07109;
     border-radius: 10px;
     font-size: 15px;
 }
@@ -82,12 +84,12 @@ h1.header-item {
     background-color: #f15d07;
     color: #fff;
     text-shadow: -1px -1px 0 #000, 3px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    font-size: 23px;
-    border: 4px solid #f07109;
+    font-size: 18px;
+    border: 2px solid #585858;
     border-radius: 10px;
 }
 
-/* Add a class for the gallery container */
+
 .gallery-container {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
@@ -130,5 +132,11 @@ footer {
     }
     .gallery-item {
         width: 100%; /* Full width for smaller screens */
+    } 
+    .flex-container a.item {
+        width: 90%;
+        font-size: 10px;
+        padding: 6px; 
     }
+   
 }

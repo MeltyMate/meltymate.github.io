@@ -32,12 +32,15 @@
     This website is far from perfect but I am trying. Please, feel free to look around and not to contact me ever.
   </p>
 
-  <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_wall.jpg"
-    title="RC_wall" alt="RC_wall" height="500" width="900" />
+  <form method="POST" action="">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
-  <footer>
-    <p>&copy; 2023 Welcome to My World by Máté M. All rights reserved.</p>
-  </footer>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
 
 
   <script>
@@ -50,6 +53,22 @@
     });
   </script>
 
+  <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $email = $_POST["email"];
+        $message = $_POST["message"];
+
+        $to = "mate.mirkovszkil@gmail.com";
+        $subject = "New Contact Form Submission";
+        $headers = "From: $email";
+
+        mail($to, $subject, $message, $headers);
+    }
+  ?>
+
 </body>
+<footer>
+  <p>&copy; 2023 Welcome to My World by Máté M. All rights reserved.</p>
+</footer>
 
 </html>
