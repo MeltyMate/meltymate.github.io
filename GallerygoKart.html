@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My World</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="website.js" defer></script>
+    <style>
+        hr {
+            border: 0;
+            height: 4px;
+            background: linear-gradient(to right, transparent, #eb7f03, transparent);
+            margin: 20px 0;
+        }
+
+        .flex-containermotorbike img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border: 2px solid #f07109;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .flex-containermotorbike img:hover {
+            transform: scale(1.1);
+        }
+
+        .flex-containermotorbike img.enlarged {
+            transform: scale(5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1 class="header-item">Welcome to My World</h1>
+
+        <h2>
+            <div class="flex-container">
+                <a href="mainpage.html" class="item">Back to the Main page</a>
+            </div>
+        </h2>
+
+
+        <div class="gallery-container">
+            <h2 class="gallery-item Motorbike" onclick="openGallery('Motorbike')">Motorbike Gallery</h2>
+            <h3 class="gallery-item Kart" onclick="openGallery('goKart')">Go-kart Gallery</h3>
+            <h4 class="gallery-item RC" onclick="openGallery('rc')">RC Gallery</h4>
+            <h5 class="gallery-item Sim" onclick="openGallery('Sim')">Sim Gallery</h5>
+        </div>
+
+        <hr>
+        <h5> KARTING </h5>
+        <div class="gallery-container">
+          
+
+            <div class="flex-containermotorbike">
+                
+                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/Gokart_1.jpeg" alt="Honda Image 2" onclick="toggleImageSize(this)">
+                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/Gokart_4.jpeg" alt="Honda Image 1" onclick="toggleImageSize(this)">
+                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/Kart2.jpeg" alt="Honda Image 3" onclick="toggleImageSize(this)">
+                
+                
+            </div>
+        </div>
+
+        <hr>
+        
+    </div>
+    <hr>
+
+    
+    <script>
+        function toggleImageSize(image) {
+            image.classList.toggle("enlarged");
+        }
+    </script>
+    <footer>
+        <p>&copy; 2023 Welcome to My World by Máté M. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
