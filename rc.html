@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My World</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="website.js" defer></script>
     <style>
         hr {
             border: 0;
@@ -77,8 +78,40 @@
     <hr>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            highlightActivePage();
+        });
+
+        function highlightActivePage() {
+            var currentPage = document.body.id;
+            var currentLink = document.querySelector(`.flex-container a[href='${currentPage}.html']`);
+            if (currentLink) {
+                currentLink.classList.add("active");
+            }
+        }
+
         function openGallery(category) {
-            // You can add specific logic for opening galleries if needed
+            let galleryPageURL;
+
+            switch (category) {
+                case 'goKart':
+                    galleryPageURL = 'https://meltymate.github.io/GallerygoKart.html';
+                    break;
+                case 'Sim':
+                    galleryPageURL = 'https://meltymate.github.io/GallerySim.html';
+                    break;
+                case 'Motorbike':
+                    galleryPageURL = 'https://meltymate.github.io/GalleryMotorbike.html';
+                    break;
+
+                case 'rc':
+                    galleryPageURL = "https://meltymate.github.io/GalleryRC.html";
+                    break;
+            }
+
+            if (galleryPageURL) {
+                window.location.href = galleryPageURL;
+            }
         }
 
         function toggleImageSize(img) {
