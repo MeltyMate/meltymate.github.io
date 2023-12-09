@@ -25,7 +25,7 @@ function openGallery(category) {
       break;
     
     case 'rc':
-      galleryPageURL = "https://meltymate.github.io/GallerygoKart.html";
+      galleryPageURL = "https://meltymate.github.io/GalleryRC.html";
       break;
   }
 
@@ -37,3 +37,6 @@ function openGallery(category) {
 function toggleImageSize(img) {
   img.classList.toggle('enlarged');
 } doesnt work with that page
+
+
+  
