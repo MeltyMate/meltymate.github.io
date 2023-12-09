@@ -6,6 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My world</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      text-align: center; /* Center align the content */
+    }
+
+    form {
+      max-width: 600px; /* Set a maximum width for the form */
+      margin: 0 auto; /* Center the form horizontally */
+      text-align: left; /* Reset text alignment for form elements */
+    }
+
+    label {
+      display: block; /* Display labels as blocks to have them on new lines */
+      margin-top: 10px; /* Add some top margin between labels */
+    }
+
+    textarea {
+      width: 400%; 
+      height: 150px; 
+      resize: vertical; 
+    }
+
+    button {
+      width: 160%; 
+      height: 130%;
+      display: block; 
+      margin-top: 20px; 
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
 
 <body id="contact">
@@ -16,20 +46,13 @@
     <a href="mainpage.html" class="item">Main page</a>
     <a href="go-karting.html" class="item">Go-karting</a>
     <a href="motorbiking.html" class="item">Motorbiking</a>
+    <a href="rc.html" class="item">RC</a>
     <a href="simracing.html" class="item">Sim racing</a>
     <a href="contact.html" class="item">Contact</a>
   </div>
 
-  <h2>Hello visitor!</h2>
-
   <p>
-    I am starting to do this website as a school project to tell about my hobbies.
-    Later, I will try to introduce these hobbies to those who would be interested in starting them.
-    In the future, I will try to introduce these hobbies, how to start them, what you need for them, etc.
-  </p>
-
-  <p>
-    This website is far from perfect but I am trying. Please, feel free to look around and not to contact me ever.
+    Please, feel free to look around and not to contact me ever.
   </p>
 
   <form method="POST" action="">
@@ -42,6 +65,7 @@
     <button type="submit">Submit</button>
   </form>
 
+  <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/Who.gif" alt="Who">
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -54,21 +78,20 @@
   </script>
 
   <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $email = $_POST["email"];
-        $message = $_POST["message"];
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST["email"];
+    $message = $_POST["message"];
 
-        $to = "mate.mirkovszkil@gmail.com";
-        $subject = "New Contact Form Submission";
-        $headers = "From: $email";
+    $to = "mate.mirkovszki@gmail.com";
+    $subject = "New Contact Form Submission";
+    $headers = "From: $email";
 
-        mail($to, $subject, $message, $headers);
-    }
+    mail($to, $subject, $message, $headers);
+  }
   ?>
-
+  <footer>
+    <p>&copy; 2023 Welcome to My World by Máté M. All rights reserved.</p>
+  </footer>
 </body>
-<footer>
-  <p>&copy; 2023 Welcome to My World by Máté M. All rights reserved.</p>
-</footer>
 
 </html>
