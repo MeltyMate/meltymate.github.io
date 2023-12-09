@@ -26,10 +26,6 @@ function openGallery(category) {
     case 'RC':
       galleryPageURL = 'https://meltymate.github.io/GalleryRC.html';
       break;
-    // Add additional cases for other gallery categories if needed
-    default:
-      // Handle default case if necessary
-      break;
   }
 
   if (galleryPageURL) {
