@@ -1,4 +1,4 @@
-</html>   document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   highlightActivePage();
 });
 
@@ -19,13 +19,12 @@ function openGallery(category) {
       break;
     case 'Sim':
       galleryPageURL = 'https://meltymate.github.io/GallerySim.html';
-      
+      break;
     case 'Motorbike':
       galleryPageURL = 'https://meltymate.github.io/GalleryMotorbike.html';
       break;
-    
     case 'rc':
-      galleryPageURL = "https://meltymate.github.io/GalleryRC.html";
+      galleryPageURL = 'https://meltymate.github.io/GalleryRC.html';
       break;
   }
 
@@ -36,7 +35,4 @@ function openGallery(category) {
 
 function toggleImageSize(img) {
   img.classList.toggle('enlarged');
-} doesnt work with that page
-
-
-  
+}
