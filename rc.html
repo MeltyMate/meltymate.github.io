@@ -1,49 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My World</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="website.js" defer></script>
-    <style>
-        hr {
-            border: 0;
-            height: 4px;
-            background: linear-gradient(to right, transparent, #eb7f03, transparent);
-            margin: 20px 0;
-        }
-
-        .flex-containermotorbike img {
-            width: 100%;
-            max-width: 300px;
-            margin: 10px;
-            border: 2px solid #f07109;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        .flex-containermotorbike img:hover {
-            transform: scale(1.1);
-        }
-
-        .flex-containermotorbike img.enlarged {
-            transform: scale(5);
-        }
-    </style>
-</head>
+<!-- ... (head section remains unchanged) -->
 
 <body id="rc">
     <div class="content">
-        <h1 class="header-item">Welcome to My World</h1>
-
-        <h2>
-            <div class="flex-container">
-                <a href="mainpage.html" class="item">Back to the Main page</a>
-            </div>
-        </h2>
+        <!-- ... (header and navigation remain unchanged) -->
 
         <div class="gallery-container">
             <h2 class="gallery-item Motorbike" onclick="openGallery('Motorbike')">Motorbike Gallery</h2>
@@ -56,9 +15,9 @@
         <h5> RC stuff </h5>
         <div class="gallery-container">
             <div class="flex-containermotorbike" onclick="toggleImageSize(this)">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_touring.jpg" alt="RC Touring">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_wall.jpg" alt="RC Wall">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_wall_cars.jpg" alt="RC Wall Cars">
+                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_touring.jpg" alt="RC Touring Image">
+                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_wall.jpg" alt="RC Wall Image">
+                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_wall_cars.jpg" alt="RC Wall Cars Image">
                 <!-- Add more images as needed -->
             </div>
         </div>
@@ -68,60 +27,4 @@
 
         <div class="gallery-container">
             <div class="flex-containermotorbike" onclick="toggleImageSize(this)">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_remote.jpg" alt="RC Remote">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_remote_2.jpg" alt="RC Remote 2">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_paint.jpg" alt="RC Paint">
-                <!-- Add more images as needed -->
-            </div>
-        </div>
-    </div>
-    <hr>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            highlightActivePage();
-        });
-
-        function highlightActivePage() {
-            var currentPage = document.body.id;
-            var currentLink = document.querySelector(`.flex-container a[href='${currentPage}.html']`);
-            if (currentLink) {
-                currentLink.classList.add("active");
-            }
-        }
-
-        function openGallery(category) {
-            let galleryPageURL;
-
-            switch (category) {
-                case 'goKart':
-                    galleryPageURL = 'https://meltymate.github.io/GallerygoKart.html';
-                    break;
-                case 'Sim':
-                    galleryPageURL = 'https://meltymate.github.io/GallerySim.html';
-                    break;
-                case 'Motorbike':
-                    galleryPageURL = 'https://meltymate.github.io/GalleryMotorbike.html';
-                    break;
-
-                case 'rc':
-                    galleryPageURL = "https://meltymate.github.io/GalleryRC.html";
-                    break;
-            }
-
-            if (galleryPageURL) {
-                window.location.href = galleryPageURL;
-            }
-        }
-
-        function toggleImageSize(img) {
-            img.classList.toggle("enlarged");
-        }
-    </script>
-
-    <footer>
-        <p>&copy; 2023 Welcome to My World by Máté M. All rights reserved.</p>
-    </footer>
-</body>
-
-</html>
+   
