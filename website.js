@@ -25,7 +25,7 @@ function openGallery(category) {
       break;
     
     case 'RC':
-      galleryPageURL = 'https://meltymate.github.io/GalleryRC.html';
+      galleryPageURL = "https://meltymate.github.io/GallerygoKart.html";
       break;
   }
 
