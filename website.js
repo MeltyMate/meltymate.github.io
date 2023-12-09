@@ -19,13 +19,12 @@ function openGallery(category) {
       break;
     case 'Sim':
       galleryPageURL = 'https://meltymate.github.io/GallerySim.html';
-      
+      break;
     case 'Motorbike':
       galleryPageURL = 'https://meltymate.github.io/GalleryMotorbike.html';
       break;
-    
     case 'rc':
-      galleryPageURL = "https://meltymate.github.io/GallerygoKart.html";
+      galleryPageURL = 'https://meltymate.github.io/GalleryRC.html';
       break;
   }
 
