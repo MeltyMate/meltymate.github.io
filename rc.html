@@ -20,30 +20,41 @@
             <a href="rc.html" class="item">RC</a>
             <a href="simracing.html" class="item">Sim racing</a>
             <a href="contact.html" class="item">Contact</a>
-           
-  </div>
+        </div>
 
         <h2>RC is fun </h2>
 
         <p>
-            RC bla bla  is a super fun stuff bla bla blba basbdpökjåfdsfI started to do this website as a school project to tell about my hobbies.
+            RC bla bla  is a super fun stuff bla bla blba basbdpökjåfdsf I started to do this website as a school project to tell about my hobbies.
             Later, I will try to introduce these hobbies to those who would be interested in starting them.
             In the future, I will try to introduce these hobbies, how to start them, what you need for them, etc.
         </p>
 
         <div class="gallery-container">
-            
-          <h2 class="gallery-item rc" onclick="openGallery('rc')">RC Gallery</h2>
+            <h2 class="gallery-item rc" onclick="openGallery('rc')">RC Gallery</h2>
 
-          
-           
+            <!-- Placeholder image -->
+            <div class="flex-containermotorbike" onclick="toggleImageSize(this)">
+                <img src="https://via.placeholder.com/150" alt="RC Gallery Image 1">
+            </div>
         </div>
     </div>
 
     <footer>
         <p>&copy; 2023 Welcome to My World by Máté M. All rights reserved.</p>
     </footer>
+    
+    <script>
+        // Define your JavaScript functions here (if needed)
+        function openGallery(category) {
+            // Your code for opening the RC Gallery
+            // ...
+        }
 
+        function toggleImageSize(img) {
+            img.classList.toggle("enlarged");
+        }
+    </script>
 </body>
 
 </html>
