@@ -25,9 +25,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    padding: 35px; /* Adjust padding for smaller screens */
+    padding: 35px;
     text-align: center;
-    font-size: 36px; /* Adjust font size for smaller screens */
+    font-size: 36px;
     margin: 0;
 }
 
@@ -41,9 +41,9 @@ h1.header-item {
     background-position: center;
     background-repeat: no-repeat;
     color: rgb(255, 255, 255);
-    text-shadow: -1px 5px 0 #000, 10px -1px 0 #000, -1px 1px 0 #000, 3px 1px 0 #000;
+    text-shadow: -1px 5px 0 #000, 10px -1px 0 #000, -1px 1px 0 #646464, 3px 1px 0 #686464;
     text-align: center;
-    font-size: 36px; /* Adjust font size for smaller screens */
+    font-size: 36px;
     margin: 0;
     width: 100%;
     transition: transform 0.3s;
@@ -52,6 +52,7 @@ h1.header-item {
 .Motorbike:hover, .Kart:hover, .RC:hover, .Sim:hover {
     transform: scale(1.2);
     cursor: pointer;
+    font-weight: bold;
 }
 
 .Motorbike {
@@ -65,49 +66,102 @@ h1.header-item {
 .RC {
     background-image: url('https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_boxes.jpg');
 }
+
 .Sim {
     background-image: url('https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/Sim2.jpeg');
+}
+
+h5 {
+    text-align: center;
+    font-size: 24px; 
+    color: #131313; 
+    margin-bottom: 10px; 
+    font-family: 'Pacifico', cursive; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+p {
+    text-align: center;
+    font-size: 24px; 
+    color: #131313; 
+    margin-bottom: 50px; 
+    font-family: 'Pacifico', cursive; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .flex-container a.item {
     background-color: #504e4e;
     color: #fff;
     text-decoration: none;
-    padding: 10px;
-    margin: 5px;
+    padding: 12px 15px;
+    margin: 5px 8px;
     border: 2px solid #f07109;
     border-radius: 10px;
     font-size: 15px;
+    text-transform: capitalize;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.flex-container a.item:hover {
+    background-color: #f07109;
+    color: #fff;
 }
 
 .flex-container a.item.active {
     background-color: #f15d07;
     color: #fff;
     text-shadow: -1px -1px 0 #000, 3px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    font-size: 16px;
+    font-size: 18px;
     border: 2px solid #585858;
     border-radius: 10px;
 }
 
-
 .gallery-container {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-    justify-content: space-around; /* Adjust as needed */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Style for each gallery item */
 .gallery-item {
     cursor: pointer;
     transition: transform 0.3s;
     text-align: center;
     margin: 10px;
-    width: 45%; /* Adjust width for smaller screens */
+    width: 45%;
 }
 
 .gallery-item:hover {
-    transform: scale(1.2); /* Adjust the zoom factor as needed */
+    transform: scale(1.2);
 }
+
+.flex-containermotorbike {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.flex-containermotorbike img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f07109;
+    border-radius: 10px;
+
+}
+
+.flex-containermotorbike img.enlarged {
+    transform: scale(4);
+    justify-content: center;
+    align-items: center;
+}
+
 
 footer {
     padding: 5px;
@@ -118,25 +172,34 @@ footer {
     font-family: Arial, sans-serif;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 600px) {
     body {
         font-size: 14px;
     }
     .header-item {
-        font-size: 24px; /* Adjust font size for smaller screens */
-        padding: 25px; /* Adjust padding for smaller screens */
+        font-size: 24px;
+        padding: 25px;
     }
     .Motorbike, .Kart, .RC {
-        font-size: 24px; /* Adjust font size for smaller screens */
+        font-size: 24px;
     }
     .gallery-item {
-        width: 100%; /* Full width for smaller screens */
+        width: 100%;
     } 
     .flex-container a.item {
         width: 90%;
         font-size: 10px;
         padding: 6px; 
     }
-   
+    .flex-container a.item.active {
+        font-size: 14px;
+    }
+
+    .flex-containermotorbike img {
+        max-width: 150px;
+    }
+
+    .flex-containermotorbike img.enlarged {
+        transform: scale(2);
+    }
 }
