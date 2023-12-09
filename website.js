@@ -23,7 +23,8 @@ function openGallery(category) {
     case 'Motorbike':
       galleryPageURL = 'https://meltymate.github.io/GalleryMotorbike.html';
       break;
-      case 'RC':
+    
+    case 'RC':
       galleryPageURL = 'https://meltymate.github.io/GalleryRC.html';
       break;
   }
