@@ -11,18 +11,32 @@ function highlightActivePage() {
 }
 
 function openGallery(category) {
-  const galleryPageURL = `gallery${category}.html`;
-  window.location.href = galleryPageURL;
+  let galleryPageURL;
+
+  switch (category) {
+    case 'goKart':
+      galleryPageURL = 'https://meltymate.github.io/GallerygoKart.html';
+      break;
+    case 'Sim':
+      galleryPageURL = 'https://meltymate.github.io/GallerySim.html';
+      break;
+    case 'Motorbike':
+      galleryPageURL = 'https://meltymate.github.io/GalleryMotorbike.html';
+      break;
+    case 'RC':
+      galleryPageURL = 'https://meltymate.github.io/GalleryRC.html';
+      break;
+    // Add additional cases for other gallery categories if needed
+    default:
+      // Handle default case if necessary
+      break;
+  }
+
+  if (galleryPageURL) {
+    window.location.href = galleryPageURL;
+  }
 }
 
 function toggleImageSize(img) {
   img.classList.toggle('enlarged');
-}
-
-function openGallery(category) {
-  if (category === 'goKart') {
-    const galleryPageURL = 'https://meltymate.github.io/GallerygoKart.html';
-    window.location.href = galleryPageURL;
-  }
-  // Add similar conditions for other gallery categories if needed
 }
