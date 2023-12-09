@@ -45,7 +45,6 @@
             </div>
         </h2>
 
-
         <div class="gallery-container">
             <h2 class="gallery-item Motorbike" onclick="openGallery('Motorbike')">Motorbike Gallery</h2>
             <h3 class="gallery-item Kart" onclick="openGallery('goKart')">Go-kart Gallery</h3>
@@ -56,19 +55,8 @@
         <hr>
         <h5> RC stuff </h5>
         <div class="gallery-container">
-          
-
             <div class="flex-containermotorbike">
-                
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_touring.jpg" alt="Honda Image 2" onclick="toggleImageSize(this)">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_wall.jpg" alt="Honda Image 1" onclick="toggleImageSize(this)">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_wall_cars.jpg" alt="Honda Image 3" onclick="toggleImageSize(this)">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_wall2.jpg" alt="Honda Image 4" onclick="toggleImageSize(this)">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_formula_1.jpg" alt="Honda Image 4" onclick="toggleImageSize(this)">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC4.jpeg" alt="Honda Image 4" onclick="toggleImageSize(this)">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_formula_1Desk.jpg" alt="Honda Image 4" onclick="toggleImageSize(this)">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_drone.jpg" alt="Motorbike Image 5" onclick="toggleImageSize(this)">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_boxes.jpg" alt="Honda Image 4" onclick="toggleImageSize(this)">
+                <!-- Images for RC stuff -->
             </div>
         </div>
 
@@ -76,35 +64,28 @@
         <h5> RC equipment </h5>
 
         <div class="gallery-container">
-            
-
             <div class="flex-containermotorbike">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_remote.jpg" alt="Motorbike Image 1" onclick="toggleImageSize(this)">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_remote_2.jpg" alt="Motorbike Image 2" onclick="toggleImageSize(this)">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_paint.jpg" alt="Motorbike Image 3" onclick="toggleImageSize(this)">
-                <img src="https://raw.githubusercontent.com/MeltyMate/meltymate.github.io/index/Images/RC_charger.jpg" alt="Motorbike Image 4" onclick="toggleImageSize(this)">
-                
-                
-
-
-
-               
+                <!-- Images for RC equipment -->
             </div>
         </div>
     </div>
     <hr>
 
-    
     <script>
         function toggleImageSize(image) {
             image.classList.toggle("enlarged");
         }
+
+        function openGallery(category) {
+            // Implement this function based on your requirements
+            console.log(`Opening gallery for category: ${category}`);
+        }
     </script>
 
-<footer>
-    <p>&copy; 2023 Welcome to My World by Máté M. All rights reserved.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2023 Welcome to My World by Máté M. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
+
