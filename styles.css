@@ -198,6 +198,12 @@ footer {
     .flex-containermotorbike img {
         max-width: 150px;
     }
+    .textarea {
+      width: 50%; 
+      height: 50px; 
+      resize: vertical; 
+    }
+
 
     .flex-containermotorbike img.enlarged {
         transform: scale(2);
