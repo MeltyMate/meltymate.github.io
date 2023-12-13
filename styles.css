@@ -172,7 +172,7 @@ footer {
     font-family: Arial, sans-serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     body {
         font-size: 14px;
     }
